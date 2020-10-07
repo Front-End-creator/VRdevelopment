@@ -8,3 +8,13 @@ $(window).scroll(function(){
         $('#logo img').removeClass('animation2').addClass('removeanimation2');
 }
 });
+
+
+$(document).ready(function(){
+    $("#navlist li").on("click",".ref, .link", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
+});
