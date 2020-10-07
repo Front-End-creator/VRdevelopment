@@ -9,7 +9,6 @@ $(window).scroll(function(){
 }
 });
 
-
 $(document).ready(function(){
     $("#navlist li").on("click",".ref, .link", function (event) {
         event.preventDefault();
